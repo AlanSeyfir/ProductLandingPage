@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="import" href="component.html" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/0854a317be.js" crossorigin="anonymous"></script>
+    <title>Product Landing</title>
+  </head>
+  <body>
+    <!-- RETRATOS A BASE DE OLEO -->
+    <div class="landing-page">
+      <header id="header">
+
+        <div class="logo">
+          <img src="/Img/Logo-200x200.png" alt="product-logo" id="header-img" />
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="/home/">Home</a></li>
+            <li><a href="/pricing/">Pricing</a></li>
+            <li><a href="/flavours/">Flavours</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+
+      </header>
+
+      <div class="ad-ice-cream">
+        <video id="video" width="400" height="220" controls>
+          <source
+            src="/Videos/Outro del Gorila(Incineroar).mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      
+      <div class="container">
+        <h2 id="h2-flavours">Flavours</h2>
+          <section class="flavours">
+            <div class="grid-flavours">
+              <h3 class="title-flavours">Vanilla</h3>
+              <p>Our own organic milk, local double cream and Madagascan vanilla – that’s it! Perfect and always our best seller.</p>
+            </div>
+            <div class="grid-flavours">
+              <h3 class="title-flavours">Strawberries & Cream</h3>
+              <p>We just add strawberries, whole and pureed, and we never add any colour. Sprinkle some toasted hazelnuts on top.</p>
+            </div>
+            <div class="grid-flavours">
+              <h3 class="title-flavours">Raspberries & Cream</h3>
+              <p>One of the first flavours we made and still one of our best. Whole raspberries mixed with cream, does it get any better? Serve with chunks of good dark chocolate if you like.</p>
+            </div>
+            <div class="grid-flavours">
+              <h3 class="title-flavours">Double Chocolate</h3>
+              <p>Dark and rich, but not too sweet. High quality cocoa powder and chocolate – simple. Sprinkle with some toasted almonds.</p>
+            </div>
+            <div class="grid-flavours">
+              <h3 class="title-flavours">Mango & Lime</h3>
+              <p>Promise, it works. Again, all about balance. Serve with a gooey meringue.</p>
+            </div>
+            <div class="grid-flavours">
+              <h3 class="title-flavours">Honeycomb</h3>
+              <p>Our second most popular flavour! Can you ever have too much honeycomb people ask? Balance is key – not enough and it’s caramel, too much and it’s too sweet and soft.</p>
+            </div>
+            </section>
+      </div>
+
+      <div class="send-email">
+        <form id="form" action="">
+          <p>If you want more information, send us an email! :D</p>
+          <input type="email" id="email" placeholder="michi@gmail.com" required /><p></p>
+          <button onclick="myFunction()">Submit</button><!-- OPEN LINK IN ANOTHER TAB -->
+        </form>
+      </div>
+
+      <script src="app.js"></script>
+      <footer></footer>
+    </div>
+  </body>
+</html>
