@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="import" href="component.html" />
     <link rel="stylesheet" href="style.css" />
+    
     <!-- GOOGLE FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" 
       rel="stylesheet"
     />
     <!-- ANIMATE CSS -->
@@ -40,16 +45,21 @@
         </nav>
       </header>
 
+      <!-- VIDEO OF ICE CREAM -->
       <div class="ad-ice-cream">
-        <video id="video" width="400" height="220" controls>
+        <h1 class="ad-h1">The best ice cream contains the best ingredients</h1>
+        <h2 class="ad-text">The proof of great ice cream is in the taste and our ice creams are only crafted from the very best fruit, berries, 
+          nuts and chocolate – all then mixed together with a huge helping of our very own creamy, organic milk. </h2>
+        <video autoplay muted loop id="video" >
           <source
-            src="/Videos/Outro del Gorila(Incineroar).mp4"
+            src="/Videos/helao.mp4"
             type="video/mp4"
           />
         </video>
       </div>
 
-      <div class="container">
+      <!-- TABLE OF FLAVOURS -->
+      <div class="container-flavours">
         <h2 id="h2-flavours">Flavours</h2>
         <section class="flavours">
           <div class="grid-flavours" id="vanilla">
@@ -99,22 +109,43 @@
         </section>
       </div>
 
+      <!-- SEND EMAIL -->
       <div class="send-email">
-        <form id="form" action="">
-          <p>If you want more information, send us an email! :D</p>
-          <input
-            type="email"
-            id="email"
-            placeholder="michi@gmail.com"
-            required
-          />
-          <p></p>
-          <button onclick="myFunction()">Submit</button><!-- OPEN LINK IN ANOTHER TAB -->
-        </form>
+        <p id="email-text">If you want more information, send us an email! :D</p>
+          <form id="form" action="">  
+            <div class="input-email">
+              <input
+                type="email"
+                id="email"
+                placeholder="michi@gmail.com"
+                required
+              />
+            </div>
+            <p></p>
+            <button onclick="myFunction()">Submit</button><!-- OPEN LINK IN ANOTHER TAB -->
+          </form>
       </div>
 
       <script src="app.js"></script>
-      <footer></footer>
+      <footer>
+        <div >© 2020 Copyright:
+          <a href=""> Helao.com</a> <!-- ADD LINK TO THE SAME PAGE -->
+        </div>
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

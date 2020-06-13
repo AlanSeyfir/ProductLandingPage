@@ -24,43 +24,152 @@ header{
     top: 0;
     min-height: 75px;
     justify-content: space-around;
-    background-color: #ffffff;/*REFERENCE TO SEE THE HEADER*/
+    background-color: #000000;/*REFERENCE TO SEE THE HEADER*/
     
 }
 
-#logo{
-    width: 60%;
-    height: 60%;
+.logo img{
+    width: 80%;
+    height: 80%;
+}
+
+.ad-h1{
+    z-index: 100;
+    position: absolute;
+    color: rgb(242, 199, 243);
+    font-size: 50px;
+    font-family: 'Arvo', serif;
+    padding: 20px 350px 0px 30px;
+}
+
+.ad-text{
+    position: absolute;
+    color: rgb(242, 199, 243);
+    padding: 20px 500px 0px 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#video{
+    position: static;
+    /*min-width: 100%;
+    max-width: 100%;*/
+    height: 10%;
+    width: 100%;
+    filter: brightness(.3);
 }
 
 #h2-flavours{
     color: aliceblue;
     text-align: center;
+    font-size: 70px;
 }
 
 h3{
     padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.container-flavours{
+    /*MAYBE ADD SOMETHING IN HERE*/
 }
 
 .flavours{
     display: grid;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     grid-template-columns: auto auto auto;
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(2, 250px);
     padding: 30px 60px 50px 60px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
 .grid-flavours{
     text-align: justify;
-    border: 1px solid black;
     padding: 10px 25px 0px 25px;
+    font-size: 18px;
+    font-style: oblique;
 }
 
 .image-flavours{
     height: 200px;
     width: 200px;
-    
 }
+
+#vanilla{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ), url(/Img/vanilla.jpg);
+    background-size: cover;
+    position: relative;
+    float: left;
+}
+
+
+#strawberries{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ), url(/Img/strawberries.jpg);
+    background-size: cover;
+    position: relative;
+    float: left;
+}
+
+#raspherries{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ), url(/Img/raspberries.jpg);
+    background-size: cover;
+    position: relative;
+    float: left;
+}
+
+#chocolate{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ), url(/Img/chocolate.jpg);
+    background-size: cover;
+    position: relative;
+    float: left;
+}
+
+#mango{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ), url(/Img/mango.jpg);
+    background-size: cover;
+    position: relative;
+    float: left;
+}
+
+#honeycomb{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ), url(/Img/Honeycomb.jpg);
+    background-size: cover;
+    position: relative;
+    float: left;
+}
+
+
 
 #nav-bar{
     font-size: x-large;
@@ -75,3 +184,71 @@ a{
     text-decoration: none;
     padding: 0 10px 0 10px;
 }
+
+form{
+    display: flex;
+    /*spadding: 0px 200px 0px 200px;*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    font-size: 40px;
+}
+
+.send-email{
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+#email-text{
+    font-style: italic;
+    color: #ff859d;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+input, input::placeholder{
+    padding: 10px;
+    width: 500px;
+    font-size: 20px;
+    margin: 20px;
+    color: rgb(162, 151, 163);
+}
+
+#input-email{
+    padding-top: 50px;
+    width: 50%;
+    font-size: 20px;
+}
+
+
+button{
+    width: 25%;
+    height: 25%;
+    font-size: 25px;
+    background-color: #fd7591;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition:all 0.3s ease-in;
+}
+
+button:hover{
+        box-shadow: inset 0 0 0 25px #fc9caf;
+}
+footer{
+    background-color: #F6AABF;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+    
+}
+
+.btn-floating.btn-sm i{
+    justify-content: space-evenly;
+    font-size: 40px;
+}
+
+
